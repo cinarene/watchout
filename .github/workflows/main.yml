@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fce7f3;
+            color: #4b4b4b;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1, h2, h3 {
+            font-family: 'Dancing Script', cursive;
+            color: #be185d;
+        }
+        .heart {
+            color: #be185d;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .message {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <!-- Main Container -->
+    <div class="container text-center">
+
+        <!-- Header Section -->
+        <h1 class="text-6xl md:text-8xl font-bold mb-4">Happy Birthday!</h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-8">A little something for you...</p>
+
+        <!-- Heartfelt Letter Section -->
+        <div class="bg-rose-50 p-8 rounded-xl shadow-inner mb-8">
+            <h2 class="text-4xl md:text-5xl mb-4">A Heartfelt Letter <span class="heart animate-pulse">&#10084;</span></h2>
+            <p id="birthday-letter" class="text-gray-800 leading-relaxed text-left message">
+                Dear [Name],
+
+                Happy birthday! I hope this day is filled with joy, laughter, and everything that makes you happy. I wanted to create this little space to show you how much you mean to me. You are an incredible person, and I am so grateful to have you in my life.
+
+                I remember when we first met, I was so impressed with your kindness and wit. You always know how to make me laugh, and you're always there for me when I need you. You are the kind of friend everyone wishes they had.
+
+                I am so excited to see what this next year brings for you. You are so talented and determined, and I know you're going to achieve all of your dreams. I will be cheering you on every step of the way.
+
+                I love you more than words can say.
+
+                With all my love,
+                [Your Name]
+            </p>
+        </div>
+
+        <!-- Images Section -->
+        <div class="mb-8">
+            <h2 class="text-4xl md:text-5xl mb-4">Our Memories</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/400x400/fff3e6/3d3d3d?text=Photo+1" alt="Placeholder photo 1" class="w-full h-auto object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/400x400/e6f2ff/3d3d3d?text=Photo+2" alt="Placeholder photo 2" class="w-full h-auto object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/400x400/ffe6f2/3d3d3d?text=Photo+3" alt="Placeholder photo 3" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Message Section -->
+        <div class="mb-8">
+            <h2 class="text-4xl md:text-5xl mb-4">A Video Message</h2>
+            <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
+                <video controls class="w-full h-full">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Audio Message Section -->
+        <div class="mb-8">
+            <h2 class="text-4xl md:text-5xl mb-4">An Audio Message</h2>
+            <div class="flex justify-center items-center">
+                <audio controls class="w-full max-w-lg">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="mt-12 text-center text-gray-500">
+            <p>Made with love <span class="heart">&#10084;</span></p>
+        </div>
+    </div>
+
+</body>
+</html>
